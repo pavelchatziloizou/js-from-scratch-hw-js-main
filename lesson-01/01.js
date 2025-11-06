@@ -2,7 +2,7 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum = 210;
+let sum = 0;
 
 let num = 1;
 
