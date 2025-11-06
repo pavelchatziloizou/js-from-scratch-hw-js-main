@@ -2,4 +2,12 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum
+let sum = 210;
+
+let num = 1;
+
+while (num <= 20) {
+    sum = sum + num;
+    num = num + 1;
+}
+console.log(sum);
