@@ -17,12 +17,8 @@ let isAccess = true;
 
 // your code
 
-if (
+if (isAccess === true) {
     (isAccess === isAdmin || isVerifiedUser) &&
-    (isAccess === hasSpecialPermission || hasTemporaryPass)
-) {
-    isAccess = true;
-} else {
-    isAccess = false;
+        (isAccess === hasSpecialPermission || hasTemporaryPass);
 }
 console.log(isAccess);
