@@ -8,11 +8,21 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = false
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass = false
+const isAdmin = true;
+const isVerifiedUser = false;
+const hasSpecialPermission = true;
+const hasTemporaryPass = false;
 
-let isAccess
+let isAccess = true;
 
 // your code
+
+if (
+    (isAccess === isAdmin || isVerifiedUser) &&
+    (isAccess === hasSpecialPermission || hasTemporaryPass)
+) {
+    alert("Доступ разрешен");
+} else {
+    alert("Доступ не разрешен");
+}
+console.log(isAccess);
