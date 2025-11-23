@@ -1,4 +1,12 @@
 // Разработайте функцию isEven, которая определяет, чётное ли число.
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
-function isEven() {}
+function isEven(number) {
+    if (number % 2 === 0) {
+        console.log("True");
+    } else {
+        console.log("False");
+    }
+}
+
+isEven(100);
