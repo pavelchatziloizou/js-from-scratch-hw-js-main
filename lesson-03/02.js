@@ -3,10 +3,10 @@
 
 function isEven(number) {
     if (number % 2 === 0) {
-        console.log("true");
+        return "True";
     } else {
-        console.log("false");
+        return "False";
     }
 }
 
-isEven();
+console.log(isEven(2));
