@@ -9,4 +9,4 @@ function isEven(number) {
     }
 }
 
-isEven(101);
+isEven();
