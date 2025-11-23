@@ -5,4 +5,4 @@ function calculateAverage(firstNumber, secondNumber) {
     console.log(expression);
 }
 
-calculateAverage(100, 20);
+calculateAverage(10, 20);
