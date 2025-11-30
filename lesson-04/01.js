@@ -22,5 +22,4 @@ function includesElement(array, element) {
     return false;
 }
 let mainArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const resultArray = includesElement(mainArray, 8);
-console.log(resultArray);
+console.log(includesElement(mainArray, 3));
