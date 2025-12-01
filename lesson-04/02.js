@@ -16,8 +16,14 @@
 */
 
 function findUniqueElements(array) {
-    return findArray;
+    const newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (!includesElement(newArray, array[i])) {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
 }
-let newArray = [1, 4, 6, 7, 10];
-let findArray = findUniqueElements(mainArray, newArray);
-console.log(findArray);
+const newArray = [1, 2, 4, 10, 11];
+const result = findUniqueElements(newArray);
+console.log(result);
