@@ -15,15 +15,31 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
+//место куда я ложу игрушки findUniqueArray
+
+// условивие какие игрушки я ложу в это место
+
+// если все хорошо ложу игрушку
+
+// возврощения findUniqueArray
+
 function findUniqueElements(array) {
-    const newArray = [];
-    for (let i = 0; i < array.length; i++) {
-        if (!includesElement(newArray, array[i])) {
-            newArray.push(array[i]);
+    const findUniqueArray = [];
+    array.forEach((elementFromFistArray) => {
+        const isElementFromFistArrayExistInUniqueArray = includesElement(
+            findUniqueArray,
+            elementFromFistArray
+        );
+        if (isElementFromFistArrayExistInUniqueArray) {
+            return;
+        } else {
+            findUniqueArray.push(elementFromFistArray);
         }
-    }
-    return newArray;
+    });
+
+    return findUniqueArray;
 }
-const newArray = [1, 2, 4, 10, 11];
-const result = findUniqueElements(newArray);
-console.log(result);
+
+const findArray = [1, 2, 3, 2, 1, 4, 5, 6, 4, 8, 9, 6];
+const findUniqueResult = findUniqueElements(findArray);
+console.log(findUniqueResult, "findUniqueResult");
