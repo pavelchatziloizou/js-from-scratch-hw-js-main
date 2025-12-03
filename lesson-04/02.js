@@ -25,15 +25,15 @@
 
 function findUniqueElements(array) {
     const findUniqueArray = [];
-    array.forEach((elementFromFistArray) => {
-        const isElementFromFistArrayExistInUniqueArray = includesElement(
+    array.forEach((element) => {
+        const includesElementFinction = includesElement(
             findUniqueArray,
-            elementFromFistArray
+            element
         );
-        if (isElementFromFistArrayExistInUniqueArray) {
+        if (includesElementFinction) {
             return;
         } else {
-            findUniqueArray.push(elementFromFistArray);
+            findUniqueArray.push(element);
         }
     });
 

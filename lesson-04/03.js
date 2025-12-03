@@ -19,12 +19,20 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 function findCommonElements(array1, array2) {
     const findCommonArray = [];
+    array1.forEach((element) => {
+        const includesElementFinction = includesElement(array2, element);
+        if (includesElementFinction) {
+            findCommonArray.push(element);
+        }
+    });
 
     return findCommonArray;
 }
+
 const findCommonArray1 = [1, 2, 3];
-const findCommonArray2 = [2, 3, 4];
+const findCommonArray2 = [4, 5, 6];
 const resultCommonElements = findCommonElements(
     findCommonArray1,
     findCommonArray2
 );
+console.log(resultCommonElements, "findCommonElements");
